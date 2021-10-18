@@ -51,6 +51,6 @@ jobs:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: build/distributions/GithubReleasesTest-0.0.1.zip
         asset_name: GithubReleasesTest
-        tag: ${{ github.ref }}
+        tag: ${{ env.RELEASE_VERSION }}
         overwrite: true
         body: "This is my release text"

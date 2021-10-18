@@ -38,6 +38,13 @@ jobs:
         draft: false
         prerelease: false
 
+    - name: Generate versions
+      uses: HardNorth/github-version-generate@v1.1.1
+      with:
+        version-source: file
+        version-file: gradle.properties
+        version-file-extraction-pattern: '(?<=release_version=).+'
+
     - name: Upload binaries to release
       uses: svenstaro/upload-release-action@v2
       with:

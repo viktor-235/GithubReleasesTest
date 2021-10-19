@@ -37,4 +37,4 @@ jobs:
       with:
         name: ${{ env.RELEASE_VERSION }}
         tag_name: ${{ env.RELEASE_VERSION }}
-        files: build/distributions/GithubReleasesTest-${{ env.RELEASE_VERSION }}.zip
+        files: build/distributions/gradle-release-automation-template-${{ env.RELEASE_VERSION }}.zip
